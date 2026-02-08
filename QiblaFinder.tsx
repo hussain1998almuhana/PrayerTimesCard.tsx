@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Compass, Navigation, AlertCircle, ShieldCheck, CheckCircle2, Info } from 'lucide-react';
-import { calculateQibla, getCurrentPosition, calculateMagneticDeclination } from '../services/locationService';
-import { Language } from '../types';
-import { translations } from '../translations';
+import { calculateQibla, getCurrentPosition, calculateMagneticDeclination } from './services/locationService';
+import { Language } from './types';
+import { translations } from './translations';
 
 interface QiblaFinderProps {
   onBack: () => void;

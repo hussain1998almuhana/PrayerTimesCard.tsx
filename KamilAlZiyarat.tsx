@@ -1,8 +1,8 @@
 
 import React, { useState, useMemo } from 'react';
 import { ArrowLeft, ArrowRight, BookOpen, Search, Menu, Book, Quote } from 'lucide-react';
-import { Language } from '../types';
-import { translations } from '../translations';
+import { Language } from './types';
+import { translations } from './translations';
 
 interface KamilAlZiyaratProps {
   onBack: () => void;

@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, Heart, Search, BookOpen } from 'lucide-react';
-import { Language } from '../types';
-import { translations } from '../translations';
+import { Language } from './types';
+import { translations } from './translations';
 
 interface ZiyaratViewerProps {
   onBack: () => void;

@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, Moon, Star, BookOpen, Heart, Sparkles, Sun, Coffee, ExternalLink } from 'lucide-react';
-import { Language } from '../types';
-import { translations } from '../translations';
+import { Language } from './types';
+import { translations } from './translations';
 
 interface RamadanDeedsProps {
   onBack: () => void;

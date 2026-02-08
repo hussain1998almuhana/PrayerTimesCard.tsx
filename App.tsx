@@ -5,21 +5,22 @@ import {
   Moon, Sun, List, X, Heart, Star, ChevronLeft, ChevronRight, Sparkles, Globe, Palette,
   Youtube, Facebook, Instagram, Twitter, Share2, Book, Library, Loader2
 } from 'lucide-react';
-import PrayerTimesCard from './components/PrayerTimesCard';
-import HijriCalendar from './components/HijriCalendar';
-import QuranReader from './components/QuranReader';
-import TasbihCounter from './components/TasbihCounter';
-import QiblaFinder from './components/QiblaFinder';
-import DailySupplications from './components/DailySupplications';
-import DailyDuasList from './components/DailyDuasList';
-import RajabDeeds from './components/RajabDeeds';
-import ShaabanDeeds from './components/ShaabanDeeds';
-import RamadanDeeds from './components/RamadanDeeds';
-import RamadanSupplicationViewer from './components/RamadanSupplicationViewer';
-import ZiyaratViewer from './components/ZiyaratViewer';
-import NotificationSettings from './components/NotificationSettings';
-import KamilAlZiyarat from './components/KamilAlZiyarat';
-import MafatihAlJinan from './components/MafatihAlJinan';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+import PrayerTimesCard from './PrayerTimesCard';
+import HijriCalendar from './HijriCalendar';
+import QuranReader from './QuranReader';
+import TasbihCounter from './TasbihCounter';
+import QiblaFinder from './QiblaFinder';
+import DailySupplications from './DailySupplications';
+import DailyDuasList from './DailyDuasList';
+import RajabDeeds from './RajabDeeds';
+import ShaabanDeeds from './ShaabanDeeds';
+import RamadanDeeds from './RamadanDeeds';
+import RamadanSupplicationViewer from './RamadanSupplicationViewer';
+import ZiyaratViewer from './ZiyaratViewer';
+import NotificationSettings from './NotificationSettings';
+import KamilAlZiyarat from './KamilAlZiyarat';
+import MafatihAlJinan from './MafatihAlJinan';
 import { Tab, Language, PrayerTimes } from './types';
 import { translations } from './translations';
 
@@ -314,6 +315,7 @@ const App: React.FC = () => {
         <NavButton active={activeTab === Tab.Qibla} isDarkMode={isDarkMode} onClick={() => { setActiveTab(Tab.Qibla); setCurrentSubView('none'); }} icon={<Compass className="w-7 h-7 md:w-9 md:h-9" />} label={t.qibla} />
         <NavButton active={activeTab === Tab.Settings} isDarkMode={isDarkMode} onClick={() => { setActiveTab(Tab.Settings); setCurrentSubView('none'); }} icon={<Settings className="w-7 h-7 md:w-9 md:h-9" />} label={t.more} />
       </nav>
+      <SpeedInsights />
     </div>
   );
 };

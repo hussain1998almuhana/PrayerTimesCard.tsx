@@ -5,8 +5,8 @@ import {
   Play, ShieldAlert, Smartphone, VolumeX, User, Loader2, 
   Square, BellRing, ChevronDown, ChevronUp, Minus, Plus, Info
 } from 'lucide-react';
-import { Language } from '../types';
-import { translations } from '../translations';
+import { Language } from './types';
+import { translations } from './translations';
 
 interface NotificationSettingsProps {
   onBack: () => void;
