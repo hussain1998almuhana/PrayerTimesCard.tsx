@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Clock, Moon, Sparkles } from 'lucide-react';
-import { PrayerTimes, Language } from '../types';
-import { translations } from '../translations';
+import { PrayerTimes, Language } from './types';
+import { translations } from './translations';
 
 interface Props {
   lang: Language;

@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, Sun, Search, Calendar } from 'lucide-react';
-import { Language } from '../types';
-import { translations } from '../translations';
+import { Language } from './types';
+import { translations } from './translations';
 
 interface DailyDuasListProps {
   onBack: () => void;

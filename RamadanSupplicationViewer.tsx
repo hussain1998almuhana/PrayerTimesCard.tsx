@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { ArrowLeft, ArrowRight, Share2, Copy, BookOpen, Star } from 'lucide-react';
-import { Language } from '../types';
-import { translations } from '../translations';
+import { Language } from './types';
+import { translations } from './translations';
 
 interface RamadanSupplicationViewerProps {
   onBack: () => void;

@@ -1,8 +1,8 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { ArrowLeft, ArrowRight, Book, Search, Library, Bookmark, ChevronLeft, Quote, Copy, Share2, Sparkles, Heart, Sun, Moon, Info, Star } from 'lucide-react';
-import { Language } from '../types';
-import { translations } from '../translations';
+import { Language } from './types';
+import { translations } from './translations';
 
 interface MafatihAlJinanProps {
   onBack: () => void;

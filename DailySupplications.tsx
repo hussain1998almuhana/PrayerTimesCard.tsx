@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { ArrowLeft, ArrowRight, Heart, Share2, Copy } from 'lucide-react';
-import { Language } from '../types';
-import { translations } from '../translations';
+import { Language } from './types';
+import { translations } from './translations';
 
 interface DailySupplicationsProps {
   onBack: () => void;

@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, ArrowRight, Search, Book, Bookmark, Trash2 } from 'lucide-react';
-import { Surah, Ayah, Language } from '../types';
-import { translations } from '../translations';
+import { Surah, Ayah, Language } from './types';
+import { translations } from './translations';
 
 interface QuranReaderProps {
   onBack: () => void;
